@@ -4,7 +4,6 @@ require 'pry'
 describe 'Binary Search Tree' do
   it 'playground' do
 
-    binding.pry
     tree = BinarySearchTree.new
 
     tree.insert(15,"First Movie")

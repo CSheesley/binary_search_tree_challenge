@@ -10,14 +10,16 @@ class BinarySearchTree
     node = Node.new(score, title)
     if @top.nil?
       @top = node
-      return counter
     else
       if score > self.top.score
         self.top.right = node
+        counter += 1
       else
         self.top.left = node
+        counter += 1
       end
     end
+    counter
   end
 
   # def place_date(score, title)
